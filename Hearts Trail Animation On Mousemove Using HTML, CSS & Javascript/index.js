@@ -1,17 +1,9 @@
 const bodySel= document.querySelector("body");
 
-// var audBubble = document.getElementsByTagName("audio");
-// audBubble[0].play();
-
-// var audio = new Audio('bubble sound.mp3');
-// audio.play();
-
-document.getElementById('bubbleAudio').play();
-
     
- bodySel.addEventListener("mousemove", (event)=>{
-    const xP = event.offsetX ;
-    const yP = event.offsetY;
+ bodySel.addEventListener("mousemove", (e)=>{
+    const xP = e.offsetX ;
+    const yP = e.offsetY;
 
     // Span loving effect
     const spanCre  = document.createElement("span");
