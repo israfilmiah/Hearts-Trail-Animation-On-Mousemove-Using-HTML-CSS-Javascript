@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    background-color: #0B0820;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+span{
+    
+    /* background: url(https://cdn4.iconfinder.com/data/icons/essentials-72/24/028_-_Heart-512.png); */
+    background: url("Heart.png");
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: loving 5s linear;
+    
+}
+
+
+
+
+@keyframes loving {
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(2020deg);
+    }
+}
+
+strong{
+    /* background: url(https://cdn2.iconfinder.com/data/icons/valentine-day-16/512/701_brokan_love_heart_wedding_valentine_valentines_day_love-512.png); */
+    background: url("Heart2.png");
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: loving2 8s linear;
+}
+
+@keyframes loving2 {
+    0%{
+        transform: translate(50%, 50%);
+        opacity: 1;
+        transform: rotate(40deg);
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(50%, 5000%);
+        opacity: 0;
+        filter: hue-rotate(1020deg);
+             
+        
+    }
+}
+
+audio {
+    display: none !important;
+}
+
+
